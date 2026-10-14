@@ -6,6 +6,7 @@
   <meta name="description" content="Experiments with newer HTML elements: template, audio, video, source, and canvas.">
   <title>Experiments | [Your Name]</title>
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <script src="scripts/hello-world.js" defer></script>
   <style>
     /* HW2 rule: borders only, to show base page structure */
     header, nav, main, section, article, footer {
@@ -88,11 +89,27 @@
       <canvas id="demo-canvas" width="300" height="150">
         Your browser does not support canvas. This is a drawing of an orange fish.
       </canvas>
+
+    </section>
+
+        <section>
+      <h3>Custom Elements</h3>
+      <p>
+        <code>page-intro</code> is a semantic, CSS-only element that wraps
+        the heading and introduction at the top of this page and of the
+        Projects and Articles pages.
+      </p>
+      <p>
+        <code>hello-world</code> prints a message to the browser console
+        without changing the page. Open your developer tools console to see
+        it.
+      </p>
+      <hello-world></hello-world>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 [Your Name]. All rights reserved.</p>
+    <p>&copy; 2026 Dzaiddin. All rights reserved.</p>
     <p><a href="#main">Back to top</a></p>
   </footer>
 
